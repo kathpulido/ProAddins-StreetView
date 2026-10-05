@@ -1,26 +1,23 @@
-Pro Addins
-==========
+# Pro Addins
 
-A collection of ArcGIS Pro buttons bundled into an addin.
+Una coleccion de botones y herramientas para ArcGIS Pro, empaquetados en un solo add-in.
 
-## Streetview
+## Street View
 
-Open Google streetview on a map click point
+Haz clic en el mapa con la herramienta "Google Streetview" para abrir la imagen de Google Street View correspondiente a ese punto.
 
-![Google Streetview](./images/streetview.gif)
+La vista de Street View se muestra directamente dentro de ArcGIS Pro, en un panel acoplable junto al mapa (sin salir a un navegador externo). El panel tambien muestra las coordenadas del punto consultado y un enlace al perfil de GitHub de la autora de esta version, debajo de la visualizacion.
 
-## Definition Query Buttons
+## Botones de consulta de definicion (Definition Query Buttons)
 
-Buttons to set a definition expression on a layer to the selected features. Similar to Create layer from selection. The only difference is the definition query is placed on the selected layer, not on a newly created layer.
+Botones para establecer una expresion de definicion sobre una capa, a partir de las entidades seleccionadas. Es similar a "Crear capa a partir de la seleccion", con la diferencia de que la consulta de definicion se aplica sobre la capa seleccionada en lugar de crear una capa nueva.
 
-![Definition Expression Button](./images/select.gif)
+## Boton de visor externo (External Viewer Button)
 
-## External Viewer Button
+Un boton configurable que permite abrir una aplicacion externa usando una propiedad de ID y una URL.
 
-A configureable button that allows a user to open an external application using an ID property and a url.
+Este boton debe habilitarse primero desde el cuadro de dialogo de Opciones de Pro, y tiene las siguientes configuraciones disponibles:
 
-This button must be enabled first using the Pro Options dialog and has the following configurable settings:
-
- - Application URL: The url to the application. Be sure to include the text {0} which will be replaced with the ID property of the selected feature
- - Layer ID Field: The field name to query in the selected feature
- - Layer Name: The name of the layer to query in the map
+- **URL de la aplicacion**: la URL de la aplicacion externa. Debe incluir el texto `{0}`, que sera reemplazado por la propiedad ID de la entidad seleccionada.
+- **Campo de ID de capa**: el nombre del campo a consultar en la entidad seleccionada.
+- **Nombre de capa**: el nombre de la capa a consultar en el mapa.
