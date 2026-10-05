@@ -1,0 +1,14 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.cache
+*.esriAddinX
+
+# Visual Studio / Rider
+.vs/
+.idea/
+
+# WebView2 user data (never commit local browser profile data)
+WebView2UserData/
